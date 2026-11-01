@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <h1 id="heading">สวัสดี</h1>
+    <button id="MyButton">กดฉัน</button>
+    <script> //<script> คือแท็ก HTML ที่ใช้สำหรับเขียนหรือเรียกใช้งาน JavaScript ภายในหน้าเว็บไซต์
+    //เปลี่ยนข้อความหัวข้อ
+        let heading = document.getElementById("heading");
+        heading.innerHTML = "Hello, World!";
+    //ตรวจจับการคลิกปุ่ม
+        let button = document.getElementById("MyButton");
+        button.addEventListener("click", function(){
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>
